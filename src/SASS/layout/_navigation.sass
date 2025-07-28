@@ -1,0 +1,26 @@
+.navigation
+    margin-bottom: $univelsal-bottom
+    &__list 
+        text-align: center
+        font-size: $text-weight
+        font-weight: 600
+        list-style: none
+        text-transform: uppercase
+    &__item
+        display: inline-block
+        cursor: pointer
+        &:not(:last-child)
+            margin-right: 10rem
+        @include respond (tab-port)
+            &:not(:last-child)
+                margin-right: 5rem
+        @include respond (phone)
+            &:not(:last-child)
+                margin-right: 4rem
+        @include respond (phone-vertical)
+            font-size: 1.3rem
+            &:not(:last-child)
+                margin-right: 2rem
+
+.footer
+    padding-top: $univelsal-bottom

@@ -1,0 +1,123 @@
+.section-hero
+    height: 80rem
+    background: url(../img/bakery-bg.jpg) center / cover no-repeat
+    position: relative
+    margin-bottom: $univelsal-bottom
+    @include respond (tab-port)
+        height: 100vh
+    &__box
+        position: absolute
+        top: 54%
+        left: 50%
+        padding: 2rem
+        width: 42rem
+        background: linear-gradient(180deg,rgba(244, 213, 178, .8) 0%, rgba(234, 156, 65, .8) 100%)
+        text-align: center
+        @include respond (tab-port)
+            left: 50%
+            transform: translate(-50%, 0%)
+        @include respond (phone-vertical)
+            width: 30rem
+            padding: 1rem
+    &__border
+        padding: 1.7rem 2.8rem
+        background-color: transparent
+        border:  0.1rem solid #000000
+    &__h1
+        text-transform: uppercase
+        font-size: $h-size
+        margin-bottom: 1rem
+        background-color: transparent
+        @include respond (phone-vertical)
+            font-size: 1.6rem      
+    &__p
+        font-size: 1.2rem
+        background-color: transparent
+
+.section-benefits
+    display: flex
+    justify-content: center
+    margin-bottom: $univelsal-bottom
+    &__container
+        @include respond (tab-port)
+            display: flex
+            justify-content: center
+    &__img
+        width: 29rem
+        height: 29rem
+        &:not(:last-child)
+            margin-right: 7.6rem
+        @include respond (tab-lend)
+            width: 25rem
+            height: 25rem
+            &:not(:last-child)
+                margin-right: 5rem
+        @include respond (tab-port)
+            width: 23rem
+            height: 23rem
+            &:not(:last-child)
+                margin-right: 2rem
+        @include respond (tab-vertical)
+            width: 18rem
+            height: 18rem
+        @include respond (phone)
+            width: 15rem
+            height: 15rem
+            &:not(:last-child)
+                margin-right: 1rem
+        @include respond (phone-vertical)
+            width: 9rem
+            height: 9rem
+
+.section-description
+    display: flex
+    justify-content: center
+    margin-bottom: $univelsal-bottom
+    &__container
+        text-align: center
+        @include respond (tab-lend)
+            width: 90%
+    &__span
+        color: $color-red
+    &__h2
+        font-size: 9.6rem
+        margin-bottom: $univelsal-bottom
+        @include respond (tab-lend)
+            font-size: 8rem
+        @include respond (tab-port)
+            font-size: 5rem
+        @include respond (phone)
+            font-size: 4rem
+        @include respond (phone-vertical)
+            font-size: 2.9rem   
+        
+    
+    &__p
+        font-size: $text-weight
+        @include respond (tab-vertical)
+        font-size: 1.6rem
+        @include respond (phone-vertical)
+            font-size: 1.3rem
+
+
+.section-location
+    display: flex
+    justify-content: center
+    margin-bottom: $univelsal-bottom
+    &__container
+        width: 1140px
+        text-align: center
+        @include respond (tab-lend)
+            width: 90%
+        
+    &__h2
+        font-size: $h-size
+        text-transform: uppercase
+        margin-bottom: $univelsal-bottom
+        @include respond (phone)
+            font-size: 2.5rem
+        @include respond (phone-vertical)
+            font-size: 1.6rem      
+    &__map
+        width: 100%
+        height: 40rem

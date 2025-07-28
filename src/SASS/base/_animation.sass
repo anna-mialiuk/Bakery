@@ -1,0 +1,15 @@
+.navigation__item
+    transition: all .2s
+
+    &:hover
+        color: $color-red
+
+.section-benefits__img
+    transition: all .2s
+
+    &:hover
+        transform: scale(1.15)
+
+    @include respond (tab-port)
+        &:hover
+            transform: none
